@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>Chessboard using Pure CSS and HTML</title>
+    <style type="text/css">
+      .chessboard {
+          width: 640px;
+          height: 640px;
+          margin: 20px;
+          border: 25px solid #333;
+      }
+      .black {
+          float: left;
+          width: 80px;
+          height: 80px;
+          background-color: #999;
+            font-size:50px;
+          text-align:center;
+          display: table-cell;
+          vertical-align:middle;
+      }
+      .white {
+          float: left;
+          width: 80px;
+          height: 80px;
+          background-color: #fff;
+          font-size:50px;
+          text-align:center;
+          display: table-cell;
+          vertical-align:middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chessboard">
+      <!-- 1st -->
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <!-- 2nd -->  
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <!-- 3th -->      
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <!-- 4st -->      
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <!-- 5th -->
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <!-- 6th -->
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <!-- 7th -->
+      <div id="sq1" class="white" onclick="klikaj('sq1')"></div>
+      <div id="sq9" class="black" onclick="klikaj('sq9')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <div id="sq" class="white" onclick="klikaj('sq')"></div>
+      <div id="sq" class="black" onclick="klikaj('sq')"></div>
+      <!-- 8th -->
+      <div id="sq0" class="black" onclick="klikaj('sq0')"></div>
+      <div id="sq8" class="white" onclick="klikaj('sq8')"></div>
+      <div id="sq16" class="black" onclick="klikaj('sq16')"></div>
+      <div id="sq24" class="white" onclick="klikaj('sq24')"></div>
+      <div id="sq32" class="black" onclick="klikaj('sq32')"></div>
+      <div id="sq40" class="white" onclick="klikaj('sq40')"></div>
+      <div id="sq48" class="black" onclick="klikaj('sq48')"></div>
+      <div id="sq56" class="white" onclick="klikaj('sq56')"></div>
+    </div>
+    <script>
+      function klikaj(sq) {
+        document.getElementById(sq).innerHTML = "&#9813";
+      }
+    </script>
+  </body>
+</html>
