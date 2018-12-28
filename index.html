@@ -30,6 +30,8 @@
           vertical-align:middle;
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='main.js'></script>
   </head>
   <body>
     <div>
@@ -114,15 +116,18 @@
       </div>
     </div>
     <a href="https://jamesschiiller.github.io/">Back to home</a>
-    <script>
-      function klikaj(sq) {
-        document.getElementById(sq).innerHTML = "&#9813";
-      }
-      
-      function loadDoc() {
-        alert("button clicked")
-      }
-    </script>
-    
   </body>
 </html>
+
+<!-- // $.ajax({
+  //   type: "POST",
+  //   dataType: 'json',
+  //   url: 'https://www.codepunker.com',
+  //   data: JSON.stringify({names: "james"}),
+  //   success: function(data, textStatus, jqXHR) {
+  //       alert("success: " + JSON.stringify(data))
+  //   },
+  //   error: function (jqXHR, textStatus, errorThrown) {
+  //       alert("error: " + errorThrown)
+  //   }
+  // }); -->
